@@ -1,0 +1,12 @@
+fyso-biz:
+  name: Fyso Biz
+  clientId: {{ biz_sso_client_id | to_json }}
+  clientSecret: "${FYSO_AUTH_BIZ_SSO_SECRET}"
+  authUrl: {{ (biz_login_origin ~ '/oauth/authorize') | to_json }}
+  tokenUrl: {{ (biz_login_origin ~ '/oauth/token') | to_json }}
+  userinfoUrl: {{ (biz_login_origin ~ '/oauth/userinfo') | to_json }}
+  scopes: [perfil]
+  whitelist: [{{ biz_sso_email | to_json }}]
+  claims:
+    username: email
+    name: nombre

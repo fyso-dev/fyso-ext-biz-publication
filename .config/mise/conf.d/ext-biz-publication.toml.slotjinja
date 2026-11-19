@@ -1,0 +1,15 @@
+[env]
+FYSO_WEB_SCHEME = "https"
+FYSO_PUBLICATION_SERVICE = {{ publication_service | to_json }}
+
+[tasks."biz-publication:status"]
+description = "Show the managed publication status and URL"
+run = "framework/scripts/run-ext.sh biz-publication -- node extensions/biz-publication/connector.cjs status"
+
+[tasks."biz-publication:publish"]
+description = "Enable the managed panel publication"
+run = "framework/scripts/run-ext.sh biz-publication -- node extensions/biz-publication/connector.cjs publish"
+
+[tasks."biz-publication:revoke"]
+description = "Disable the managed panel publication"
+run = "framework/scripts/run-ext.sh biz-publication -- node extensions/biz-publication/connector.cjs revoke"

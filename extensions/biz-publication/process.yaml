@@ -1,0 +1,7 @@
+version: "0.5"
+processes:
+  ext-biz-publication:
+    command: framework/scripts/run-ext.sh biz-publication -- node extensions/biz-publication/connector.cjs connect
+    depends_on:
+      caddy:
+        condition: process_healthy

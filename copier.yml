@@ -1,0 +1,39 @@
+_min_copier_version: "9.19.1"
+_answers_file: .copier-answers.ext-biz-publication.yml
+_templates_suffix: .slotjinja
+publication_service:
+  type: str
+  help: HTTPS origin of the Fyso Biz panel publication service
+  validator: >-
+    {% if not (publication_service | regex_search('^https://[a-z0-9][a-z0-9.-]*[a-z0-9]$')) %}
+    Enter the HTTPS origin without a path or trailing slash.
+    {% endif %}
+_exclude:
+  - copier.yml
+  - README.md
+  - LICENSE
+  - .gitignore
+  - service
+  - .git
+biz_login_origin:
+  type: str
+  default: "https://fyso.biz"
+  help: HTTPS origin of Fyso Biz OAuth
+  validator: >-
+    {% if not (biz_login_origin | regex_search('^https://[a-z0-9][a-z0-9.-]*[a-z0-9]$')) %}
+    Enter the HTTPS origin without a path or trailing slash.
+    {% endif %}
+biz_sso_client_id:
+  type: str
+  help: Fyso Biz OAuth client registered for the Tinyauth callback
+  validator: >-
+    {% if not biz_sso_client_id %}
+    A registered OAuth client ID is required.
+    {% endif %}
+biz_sso_email:
+  type: str
+  help: Verified Fyso Biz email allowed to sign in to this panel
+  validator: >-
+    {% if not (biz_sso_email | regex_search('^[a-zA-Z0-9._+%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}$')) %}
+    Enter the exact email of the permitted Fyso Biz user.
+    {% endif %}
