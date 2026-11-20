@@ -1,0 +1,7 @@
+# Development of this extension: the panel page builds with the framework's pinned tools.
+[tools]
+node = "24.15.0"
+
+[tasks.build]
+description = "Build the identity page (FYSO_FRAMEWORK_ROOT = a framework checkout or generated project)"
+run = "node scripts/build.cjs"

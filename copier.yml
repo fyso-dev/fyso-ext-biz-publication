@@ -1,6 +1,16 @@
 _min_copier_version: "9.19.1"
 _answers_file: .copier-answers.ext-biz-publication.yml
 _templates_suffix: .slotjinja
+_external_data:
+  framework_api: framework/panel/extension-api.json
+framework_api:
+  type: int
+  default: "{{ _external_data.framework_api.version }}"
+  help: Framework panel extension API version (v3 or later)
+  validator: >-
+    {% if framework_api < 3 or (_external_data.framework_api.version is defined and _external_data.framework_api.version < 3) %}
+    This extension requires Fyso panel extension API v3 or later (project identity). Upgrade the framework first.
+    {% endif %}
 publication_service:
   type: str
   help: HTTPS origin of the Fyso Biz panel publication service
@@ -14,6 +24,13 @@ _exclude:
   - LICENSE
   - .gitignore
   - service
+  - panel-src
+  - scripts
+  - vite.config.mjs
+  - tsconfig.json
+  - mise.toml
+  - package.json
+  - .data
   - .git
 biz_login_origin:
   type: str

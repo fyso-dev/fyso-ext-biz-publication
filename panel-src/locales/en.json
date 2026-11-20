@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "loading": "Loading…",
+    "title": "Identity",
+    "intro": "The name, colours, typography, icon and login background every app of the project shows.",
+    "bizTitle": "Sign in with Fyso Biz to customize",
+    "bizBody": "The project identity is edited from a Fyso Biz session. Sign out and choose “Fyso Biz” on the login.",
+    "bizSignIn": "Sign in with Fyso Biz",
+    "name": "Name",
+    "nameHint": "Shown by the panel, the login, Automations and Agent chat.",
+    "nameRequired": "Enter a name.",
+    "accentHex": "Colour in hexadecimal",
+    "accentInvalid": "The colour must be a hex value such as #6e1fff.",
+    "palette": "Palette",
+    "custom": "Custom",
+    "palettes": {
+      "fyso": "Fyso",
+      "ocean": "Ocean",
+      "teal": "Teal",
+      "forest": "Forest",
+      "gold": "Gold",
+      "sunset": "Sunset",
+      "ruby": "Ruby",
+      "graphite": "Graphite"
+    },
+    "font": "Typography",
+    "fonts": {
+      "fyso": "Fyso",
+      "system": "System",
+      "humanist": "Humanist",
+      "classic": "Classic",
+      "rounded": "Rounded"
+    },
+    "radius": "Corners",
+    "radii": {
+      "sharp": "Sharp",
+      "soft": "Soft",
+      "round": "Rounded"
+    },
+    "icon": "Icon",
+    "iconChange": "Choose image…",
+    "iconReset": "Use Fyso's",
+    "iconHint": "PNG, JPG, WebP or SVG. Saved square, up to 256 px.",
+    "iconInvalid": "That image could not be used. Try a PNG or a JPG.",
+    "background": "Login background",
+    "backgroundChange": "Choose photo…",
+    "backgroundReset": "Use Fyso's",
+    "backgroundHint": "A photo or large image. Saved as JPEG, up to 1600 px.",
+    "backgroundInvalid": "That image could not be used. Try a JPG or a PNG.",
+    "restartNote": "The panel, the icons and the login background change on save. The name on the login, Automations and Agent chat changes when the project restarts. Typography and corners apply to the panel.",
+    "resetAll": "Reset everything to Fyso",
+    "save": "Save",
+    "saving": "Saving…",
+    "saved": "Saved. Versioned in git."
+  }
+}

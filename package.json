@@ -1,0 +1,11 @@
+{
+  "name": "fyso-ext-biz-publication",
+  "private": true,
+  "version": "0.2.0",
+  "scripts": {
+    "build": "node scripts/build.cjs"
+  },
+  "engines": {
+    "node": ">=24.15.0"
+  }
+}

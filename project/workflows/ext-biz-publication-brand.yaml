@@ -1,0 +1,14 @@
+name: ext-biz-publication-brand
+description: Saves the project identity edited on the Identity page (framework brand.cjs, panel API 3)
+labels:
+  - fyso=system
+type: graph
+max_active_runs: 1
+params:
+  - OP: read
+  - SETTINGS_B64: ""
+working_dir: ${FYSO_ROOT}
+steps:
+  - id: operate
+    run: node framework/scripts/brand.cjs operate
+    output: RESULT

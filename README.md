@@ -7,6 +7,25 @@ HTTPS requests and contacts only the local Caddy gateway. It uses the existing
 D62 public address contract. The generated project must support the
 `tinyauth.providers.yaml` extension slot for Fyso Biz SSO.
 
+## Project identity
+
+Installed, the extension adds an **Identidad** page to the panel menu. It edits the
+project identity: name, a palette or custom colour, typography, corners, icon and
+login background, previewed live on the whole panel. The options are enabled only
+for a session opened with **Fyso Biz** (Tinyauth provider `fyso-biz`); a local login
+sees how to switch. This is a guardrail in the page: anyone with access to the
+repository can still edit `project/brand.json` by hand.
+
+Saving runs `ext-biz-publication-brand`, which calls the framework's
+`brand.cjs operate`: it validates, commits `project/brand.json` and its images and
+reinstalls them for every app. It needs panel extension API v3 (`copier` checks it).
+
+Build the page after changing `panel-src/`:
+
+```sh
+FYSO_FRAMEWORK_ROOT=<framework checkout or generated project> mise run build
+```
+
 ## Service setup
 
 Deploy `service/wrangler.toml` as a separate Worker in the Fyso Biz Cloudflare

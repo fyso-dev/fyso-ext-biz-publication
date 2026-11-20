@@ -1,0 +1,33 @@
+/* Identity page: the panel's tokens (panel.css), so the page follows the look it edits. */
+.id-form { display: flex; flex-direction: column; gap: 18px; padding: 20px 22px; }
+.id-form fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.id-form legend { padding: 0; margin-bottom: 6px; }
+.id-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.id-mark { flex-shrink: 0; border-radius: 8px; object-fit: contain; }
+.id-palettes { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.id-palette { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px 0 6px; border: 0; border-radius: var(--fy-radius-pill);
+  background: var(--fy-surface-2); box-shadow: inset 0 0 0 1px var(--fy-line); color: var(--fy-text); font: inherit; font-size: 13px; cursor: pointer; }
+.id-palette[aria-checked="true"], .id-palette.is-on { box-shadow: inset 0 0 0 2px var(--fy-accent); font-weight: 700; }
+.id-dot { width: 20px; height: 20px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(0,0,0,.12); }
+.id-color { width: 22px; height: 22px; padding: 0; border: 0; border-radius: 50%; background: none; cursor: pointer; }
+.id-color::-webkit-color-swatch-wrapper { padding: 0; }
+.id-color::-webkit-color-swatch { border: 0; border-radius: 50%; }
+.id-hex { width: 96px; height: 32px; }
+.id-choices { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 6px; }
+.id-choice { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 10px 8px; border: 0; border-radius: var(--fy-radius-lg);
+  background: var(--fy-surface-2); box-shadow: inset 0 0 0 1px var(--fy-line); color: var(--fy-text); font-size: 12px; cursor: pointer; }
+.id-choice[aria-checked="true"] { box-shadow: inset 0 0 0 2px var(--fy-accent); font-weight: 700; }
+.id-aa { font-size: 22px; line-height: 1; font-weight: 700; }
+.id-corner { width: 26px; height: 22px; border: 2.5px solid currentColor; border-right: 0; border-bottom: 0; }
+.corner-sharp { border-top-left-radius: 2px; } .corner-soft { border-top-left-radius: 8px; } .corner-round { border-top-left-radius: 16px; }
+.id-login { width: 168px; height: 96px; border-radius: var(--fy-radius-md); background-size: cover; background-position: center;
+  box-shadow: inset 0 0 0 1px var(--fy-line); display: grid; place-items: center; overflow: hidden; }
+.id-login-card { display: inline-flex; align-items: center; gap: 4px; max-width: 120px; padding: 6px 8px; border-radius: 6px; background: #26252d; color: #fff; font-size: 10px; }
+.id-login-card b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.id-form label.btn { cursor: pointer; }
+.id-form label:focus-within { outline: 2px solid var(--fy-focus); outline-offset: 2px; }
+.id-foot { display: flex; align-items: center; gap: 10px; padding-top: 14px; border-top: 1px solid var(--fy-line); }
+.id-saved { color: var(--fy-ok); font-weight: 700; font-size: 13px; }
+.id-locked { display: flex; align-items: center; gap: 14px; padding: 18px 20px; flex-wrap: wrap; }
+.id-lock { font-size: 22px; }
+.id-locked h2 { font-weight: 700; font-size: 16px; }

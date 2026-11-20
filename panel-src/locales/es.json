@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "loading": "Cargando…",
+    "title": "Identidad",
+    "intro": "El nombre, los colores, la tipografía, el ícono y el fondo del login que ven todas las apps del proyecto.",
+    "bizTitle": "Entrá con Fyso Biz para personalizar",
+    "bizBody": "La identidad del proyecto se edita desde una sesión de Fyso Biz. Cerrá esta sesión y elegí «Fyso Biz» en el login.",
+    "bizSignIn": "Entrar con Fyso Biz",
+    "name": "Nombre",
+    "nameHint": "Lo ven el panel, el login, Automatizaciones y Chat de agentes.",
+    "nameRequired": "Escribí un nombre.",
+    "accentHex": "Color en hexadecimal",
+    "accentInvalid": "El color tiene que ser un hexadecimal como #6e1fff.",
+    "palette": "Paleta",
+    "custom": "Personalizado",
+    "palettes": {
+      "fyso": "Fyso",
+      "ocean": "Océano",
+      "teal": "Turquesa",
+      "forest": "Bosque",
+      "gold": "Oro",
+      "sunset": "Atardecer",
+      "ruby": "Rubí",
+      "graphite": "Grafito"
+    },
+    "font": "Tipografía",
+    "fonts": {
+      "fyso": "Fyso",
+      "system": "Del sistema",
+      "humanist": "Humanista",
+      "classic": "Clásica",
+      "rounded": "Redondeada"
+    },
+    "radius": "Esquinas",
+    "radii": {
+      "sharp": "Rectas",
+      "soft": "Suaves",
+      "round": "Redondeadas"
+    },
+    "icon": "Ícono",
+    "iconChange": "Elegir imagen…",
+    "iconReset": "Usar el de Fyso",
+    "iconHint": "PNG, JPG, WebP o SVG. Se guarda cuadrado, de hasta 256 px.",
+    "iconInvalid": "No se pudo usar esa imagen. Probá con un PNG o un JPG.",
+    "background": "Fondo del login",
+    "backgroundChange": "Elegir foto…",
+    "backgroundReset": "Usar el de Fyso",
+    "backgroundHint": "Una foto o imagen grande. Se guarda en JPEG, de hasta 1600 px.",
+    "backgroundInvalid": "No se pudo usar esa imagen. Probá con un JPG o un PNG.",
+    "restartNote": "El panel, los íconos y el fondo del login cambian al guardar. El nombre del login, de Automatizaciones y de Chat de agentes cambia cuando el proyecto se reinicia. La tipografía y las esquinas aplican al panel.",
+    "resetAll": "Volver todo a Fyso",
+    "save": "Guardar",
+    "saving": "Guardando…",
+    "saved": "Guardado. Se versionó en git."
+  }
+}
